@@ -1,0 +1,40 @@
+Employee 1 : 28
+Employee 2 : 35
+Employee 3 : 29
+
+Arrangements or structuring the data
+
+A) consecutively, one after the other in memory
+    a) No option for adding no data will be provided
+
+     [   28    |    35    |    29   ]//array
+       0x100H     0x104H     0x108H
+
+
+    b) We can add more data values if required, in future
+
+    [   28    |    35    |    29   
+       0x100H     0x104H     0x108H
+
+
+Employee 4 (joined) : 36
+
+Expected:
+    [   28    |    35    |    29     |    36
+       0x100H     0x104H     0x108H      0x112H
+
+There is no guarantee that the compiler gives the memory next to the present one or Memory is not available at expected position
+
+    [   28    |    35    |    29     |    ////
+       0x100H     0x104H     0x108H      ////
+
+                    TRANSFER DATA TO A NEW REGION IN MEMORY
+
+    [   28    |    35    |    29     |    36
+       0x100H     0x104H     0x108H      0x112H
+
+
+
+EVERYTHING IS AN ILLUSION
+
+THERE IS NO ARRAY, THERE IS NO STACK, THERE IS NO LIST

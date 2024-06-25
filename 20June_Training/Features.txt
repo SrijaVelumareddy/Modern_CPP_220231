@@ -1,0 +1,51 @@
+Modern CPP
+    - All versions of C++ since C++11
+
+CPP is revised/updated every 3 years
+
+so versions of C++ are: C++11, C++14, C++17...
+
+
+5 weeks
+
+    A -> Essentials of Modern CPP (fundamentals)
+    B -> Functional programming in CPP
+    C -> Concurrency and CPP17
+    D -> STL Ds & Algorithms
+
+Feature1: In class initialization
+Feature2: Enum class
+Feature3: Enable / disable special member functions
+    -Defaulted and deleted member functions
+    -you can choose whther to enable or disable 6 special member functions for a class you are creating
+
+    a) Default constructor
+    b) destructor
+    c) copy constructor
+    d) copy assignment operator = (overload = operator)
+    e) move constructor (new feature in c++ 11)
+    f) move assignment operator = (overload = operator for move)
+
+Feature4: NULL has been replaced with nullptr
+
+Feature5: Uniform initialization
+    -we can initialize variables in a function using {}
+
+Feature6: member list initialization
+
+Feature7: auto keyword
+            detect and infer the type of variables based on initial value
+
+Feature8: constructor delegation
+            you can transfer/shift control of the program from one constructor to another in the same class
+
+Feature9: Additional numeric types with specific size in memory
+
+Feature10: For-each (range-based for loop)
+
+Feature11: Emplace data in containers (in-place construction of values within the container)
+
+Feature12: "Using" keyword is used to short the length of the data type
+
+
+
