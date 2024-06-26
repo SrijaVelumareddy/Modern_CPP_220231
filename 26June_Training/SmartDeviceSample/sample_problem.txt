@@ -1,0 +1,34 @@
+Create an abstract base class "Device" with the following attributes
+    - a string ID, a string modelName, a float value price
+
+    - create a parameterized constructor to initialize all objects
+    - a function CalculateGstCost which is abstract in this class
+
+Create a class "SmartDevice" which inherits from the Parent class Device with following attributes
+
+    - deviceTechnology which could be either BLUETOOTH, WIFI, WIFI_BLUETOOTH, OTHER
+    - an array of floats called "_deviceSensorReadings" which stores 3 float values
+    - An override of the function CalculateGstCost which returns a float values as per the following formula
+
+        - for BLUETOOTH devices -> 10% of price
+        - for  WIFI and WIFI_BLUETOOTH devices - 15% of price
+        - for OTHER devices - 20% of price
+
+    - overload << operator for this class
+    - overload [] operator for indexing _deviceSensorReadings for the class.
+
+In functionalities
+    - Create a function to make 3 objects on the heap and store pointers in an array for the class SmartDevice
+    - A function to return the value of _deviceSensorReadings array's [ith] index where i value is accepted as a parameter 
+    - A function to find the ID of the Device whose CalculateGstCost function's return value is the highest
+
+
+/*
+
+    1)Employee statement
+    2)Devices & SmartDevices
+    3)BankAccount & DebitCard
+    4)Car-EvCar-IceCar class code
+    5)Student class
+
+*/
