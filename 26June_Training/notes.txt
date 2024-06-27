@@ -66,3 +66,11 @@ Universal algoritm:
     **when we run for each loop, the background code is witten by someone,
      the background code which executes is called iterators. If you run a vector, vector code executes,If you run a array, array code executes.
     Iterators are abstraction created over pointers to elements in a container.
+
+
+
+
+    Divide the available time in 3 parts:
+        - required biological/personal time
+        - absolute time wastage in every possible way
+        - time for learning new things and improving skills
