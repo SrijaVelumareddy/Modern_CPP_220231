@@ -3,9 +3,26 @@
 
 #include "Employee.h"
 #include "Project.h"
+#include<list>
 
-void CreateObjects(Employee** employees, Project** projects, unsigned int size);
+using EmployeeContainer = std::list<Employee*>;
+using ProjectContainer = std::list<Project*>;
+using Predicate = std::function<bool(const Employee*)>;
 
-void Deallocate(Employee** employees, Project** projects, unsigned int size);
+void CreateObjects(EmployeeContainer employees, ProjectContainer projects);
+
+void Deallocate(EmployeeContainer employees, ProjectContainer projects);
+
+/*
+    - Add a feature to filter employees based on filter predicates(functional style)[FILTER LAMBDA]
+*/
+
+void FilterEmployees( Predicate fn, EmployeeContainer& employees);
+
+/*
+    print project budget for all employees using employee data container
+*/
+
+void DisplayProjectBudget(const EmployeeContainer &employees);
 
 #endif // FUNCTIONALITIES_H

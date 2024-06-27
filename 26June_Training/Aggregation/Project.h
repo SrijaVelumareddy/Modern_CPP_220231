@@ -12,6 +12,15 @@ private:
 public:
     Project(std::string id,  unsigned int size, float budget); 
     ~Project();
+
+    float budget() const { return _budget; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Project &rhs) {
+        os << "_id: " << rhs._id
+           << " _teamSize: " << rhs._teamSize
+           << " _budget: " << rhs._budget;
+        return os;
+    }
 };
 
 #endif // PROJECT_H
