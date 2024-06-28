@@ -21,9 +21,9 @@ public:
     float price() const { return _price; }
 
     friend std::ostream &operator<<(std::ostream &os, const Device &rhs) {
-        os << "_id: " << rhs._id
-           << " _modelName: " << rhs._modelName
-           << " _price: " << rhs._price;
+        os << "_id: " << rhs._id << "\n"
+           << " _modelName: " << rhs._modelName << "\n"
+           << " _price: " << rhs._price << "\n";
         return os;
     }
 

@@ -31,9 +31,9 @@ SmartDevice::~SmartDevice()
 }
 
 std::ostream &operator<<(std::ostream &os, const SmartDevice &rhs) {
-    os << static_cast<const Device &>(rhs)
-       << " _deviceTechnology: " << rhs._deviceTechnology
-       << " _arr: " << rhs._arr;
+    os << static_cast<const Device &>(rhs) << "\n"
+       << " _deviceTechnology: " << rhs._deviceTechnology << "\n"
+       << " _arr: " << *rhs._arr << "\n";
     return os;
 }
 
