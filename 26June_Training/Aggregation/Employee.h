@@ -17,6 +17,12 @@ public:
     Employee(int id, std::string name, ProjectRef pr);
     ~Employee();
 
+    // ProjectRef project() const { return _project; }
+
+    int id() const { return _id; }
+
+    std::string name() const { return _name; }
+
     ProjectRef project() const { return _project; }
 
     friend std::ostream &operator<<(std::ostream &os, const Employee &rhs) {

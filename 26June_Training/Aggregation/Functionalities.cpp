@@ -1,6 +1,6 @@
 #include "Functionalities.h"
 
-void CreateObjects(EmployeeContainer employees, ProjectContainer projects)
+void CreateObjects(EmployeeContainer& employees, ProjectContainer& projects)
 {
     projects.emplace_back(new Project("c.111", 10, 1000.0f));
     projects.emplace_back(new Project("c.221", 50, 11000.0f));
@@ -12,8 +12,6 @@ void CreateObjects(EmployeeContainer employees, ProjectContainer projects)
     employees.emplace_back(new Employee(102, "Rohan", **itr++));
     employees.emplace_back(new Employee(103, "Riya", **itr++));
 }
-    
-    
 
 void Deallocate(EmployeeContainer employees, ProjectContainer projects)
 {
@@ -27,7 +25,6 @@ void Deallocate(EmployeeContainer employees, ProjectContainer projects)
 
 void FilterEmployees(const Predicate fn,const EmployeeContainer& employees)
 {
-    bool isValidEmployeeFound{false};
     for(Employee* emp : employees){
         if( fn(emp)){
             std::cout << *emp << "\n";
