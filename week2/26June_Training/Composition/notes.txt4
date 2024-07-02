@@ -1,0 +1,24 @@
+
+backaccount input:
+    account number
+    holder name
+    balance
+    account type
+    debitcard details
+
+debitcard input:
+    m_card_Cc
+    m_card_expiry_data
+    card_number
+    cart type;
+
+
+take the reference of the debitcard 
+
+create objects
+
+showdetails for given id
+
+count visa cards
+
+deallocatememory

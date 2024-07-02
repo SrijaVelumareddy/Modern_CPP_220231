@@ -1,0 +1,52 @@
+Employee HAS A Project
+
+    Aggregation : Aggregated class (Employee) does not control the lifetime
+    of the aggregating class (Project)
+
+
+class Employee
+
+    -id : unsigned int
+    -name : string
+    -_project : Project
+
+
+class Project
+
+    - _id : std::string
+    - teamSize : unsigned int
+    - _budget : Project
+
+
+
+
+COMPOSITION
+------------
+<---------------------------------Employee------------------------------>
+[   111100| Harshit |   [  c.Learning | 41 | 1000.0f  ]                   ]
+                        <--------Project-------------->
+
+Aggregation
+------------
+ [  c.Learning | 41 | 1000.0f  ]    
+<--------Project-------------->
+                        |
+                        |
+                        |
+[   111100| Harshit |   Reference-to-a-Project]
+
+
+Container of Projects
+
+
+Container of Employees
+
+
+first-employee<---------->first Project
+
+In aggregation demo code,
+    - replace c-style arrays with vectors
+    - Add a feature to filter employees based on filter predicates(functional style)[FILTER LAMBDA]
+    - Add a feature to calculate bonus for each employee using a formula given by the user (functional style) [MAPPING LAMBDA]
+        example: each employee gets 2000 rs bonus
+        example: each employee gets bonus = 100000 / project_team_size

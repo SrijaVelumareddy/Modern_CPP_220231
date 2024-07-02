@@ -1,0 +1,20 @@
+Data structures and algoritms in C++
+    - Adam Drozdek
+
+cppreference, cpp.com
+
+
+THINGS NO ONE TELLS ABOUT DATA STRUCTURES:
+
+a) Data structures are Arrangements of data, different ways of retrieving or accessing data
+
+b) Data structures are theoretical and philosophical. They have to be implicated through code
+
+c) Implementation of data structures on different platform or different libraries may differ in behaviour
+
+d) There are "infinite" data structures in the world
+
+e) Data structure Implementations have to follow rules/syntax of the language
+
+valgrind --leak-check=yes ./app
+

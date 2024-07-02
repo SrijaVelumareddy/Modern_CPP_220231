@@ -1,0 +1,10 @@
+Make a software that "DOES SOMETHING" after account is registered with the bank
+
+
+Do Something(action){
+    action(emailId, number);
+}
+
+Do Something(  sendWelcomeEmail  )
+
+Do Something( sendWhatsappMsgAndMail )

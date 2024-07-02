@@ -1,0 +1,76 @@
+week agenda:
+
+    week 2: functional programming
+
+supplementary concepts
+    1) containers in ++
+        -> vectors and C-style array
+
+    2) Move semantics
+
+    3) RAII classes
+
+    4) Git version control
+
+    5) Command-line utilities
+
+    6) How to interact with large scale projects
+
+    7) Recursion and other styles of programming
+
+
+
+10   20   30
+
+1) c-style array
+
+        10        20        30
+        0x100H   0x104H    0x108H
+        ^
+        |
+        arr
+
+2) std::vector
+        |          |          |
+    [ 0x100H  |  0x108H  |  0x120H]
+
+3)std::list<T>
+
+    0x111H                  0x200H                0x800H
+    nullptr|10 | 0x200H   0x111H|20|0x800H       0x200H|30|nullptr
+
+
+FOR CONSECUTIVE ELEMENTS
+
+    from base-location to last element location (size-1)
+        - access element
+
+            base address + (location * size of each element)
+
+
+For Linked list
+
+    from first location:
+        - dereference to reach the element. access in
+        - Now, read the address for the next element.
+        - if next pointer is nullptr, break.
+        - else, repeat steps.
+
+
+Universal algoritm:
+
+    a) for every element fetched from the container
+        (DON'T GIVE A DAMN HOW YOU GET IT),
+            - access the element and do something with it.
+
+    **when we run for each loop, the background code is witten by someone,
+     the background code which executes is called iterators. If you run a vector, vector code executes,If you run a array, array code executes.
+    Iterators are abstraction created over pointers to elements in a container.
+
+
+
+
+    Divide the available time in 3 parts:
+        - required biological/personal time
+        - absolute time wastage in every possible way
+        - time for learning new things and improving skills
