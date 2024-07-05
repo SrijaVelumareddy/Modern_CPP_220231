@@ -1,0 +1,6 @@
+1) expected;
+    -------> a semicolon is missing. Identify the line and look for left of the token and previous lines to fix.
+
+2) Undefined reference to "something"(means an object/variable)
+    -------> a) spelling/typing mistake (typo)
+             b) 

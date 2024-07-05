@@ -1,0 +1,17 @@
+week3
+
+concurrency
+    - std::thread
+        - join, joinable, mutex, lock_guard, unique_lock
+    - std::async_threads
+
+cpp17
+    - variants
+    - optional
+    - guaranteed copy_elision
+    - if init
+    - structured binding
+
+Supplementary
+    - unique pointer
+    - shared pointer

@@ -1,0 +1,7 @@
+Errors: syntactically
+    - C++ --->code will not compile
+    - Compiler : gcc(g++)
+    - Compiler : clangd
+    - Intellisense/<some-other-name>
+
+C++ language (ISO_CPP committee)

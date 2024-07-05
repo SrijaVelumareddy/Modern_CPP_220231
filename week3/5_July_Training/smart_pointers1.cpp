@@ -1,6 +1,8 @@
 #include<iostream>
 #include<memory> //cpp11 feature
 //If you want to use smartpointers, don't create lvalue raw pointers
+//If your code requires no copy and no replicating only you can use unique pointers. You can use shared ptr.
+
 class Data
 {
 private:
