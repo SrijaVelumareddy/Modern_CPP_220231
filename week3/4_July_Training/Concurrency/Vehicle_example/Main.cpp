@@ -7,7 +7,7 @@ int main(){
     //step2: Execute parallel functions
     Operations::MapThreads();
     Operations::JoinThreads();
-    Operations::FindAverageCost();
+    // Operations::FindAverageCost();
 
     //step3: serial functions
     //auto result1 = Operations::FindSeatCountForGivenId("c101"); or
