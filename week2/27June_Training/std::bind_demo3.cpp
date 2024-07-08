@@ -32,7 +32,7 @@ int main(){
     fn(); //obj.DisplayReading(100);
 
     Data::Display(10); //"Hello World 10 times"
-
+    //or
     auto binded_static_display = std::bind( Data::Display, 10);
     binded_static_display(); //Data::Display(10);
 }

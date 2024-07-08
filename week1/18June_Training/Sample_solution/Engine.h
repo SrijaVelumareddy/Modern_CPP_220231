@@ -13,6 +13,7 @@ private:
 public:
     Engine()=default;
     ~Engine()=delete;
+    Engine(const Engine& other)=delete;
     Engine& operator=(const Engine& other) = delete;
     Engine& operator=(Engine&&) = delete;
     Engine(Engine&&) = delete;

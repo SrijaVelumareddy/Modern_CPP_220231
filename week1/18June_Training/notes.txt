@@ -16,8 +16,8 @@ so versions of C++ are: C++11, C++14, C++17...
 Feature1: In class initialization
 Feature2: Enum class
 Feature3: Enable / disable special member functions
-    -Defaulted and deleted member functions
-    -you can choose whther to enable or disable 6 special member functions for a class you are creating
+    - Defaulted and deleted member functions
+    - you can choose whther to enable or disable 6 special member functions for a class you are creating
 
     a) Default constructor
     b) destructor

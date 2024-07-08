@@ -22,7 +22,6 @@ void DisplayCardDetails(const Container accounts,const long number)
             break;
         }
     }
-
     if (!flag){
         throw AccountNotFoundException("Invalid number");
     }

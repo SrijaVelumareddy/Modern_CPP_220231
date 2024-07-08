@@ -56,7 +56,7 @@ float FindHorsePowerForMinTorqueEngine(Engine **engines, unsigned int size)
     for(int i=0;i<size;i++){
         if(engines[i]){
             flag=true;
-            if(Min<engines[i]->torque()){
+            if(engines[i]->torque()<Min){
                 Min=engines[i]->torque();
                 index=i;
             }

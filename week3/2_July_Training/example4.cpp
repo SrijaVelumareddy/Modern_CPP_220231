@@ -41,8 +41,9 @@ public:
 //is called a "functor" object
 
 // int main(){
-//     std::thread t1 { &MathOperations::Square, MathOperations{10} };
 //     MathOperations m1{100};
+//     std::thread t1 { &MathOperations::Square, MathOperations{10} };
+//     
 
 //     std::thread t2 { m1 }; //thread created by a functor object
 //     m1(); //use the parenthesis operator with the object

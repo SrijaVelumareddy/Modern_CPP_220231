@@ -19,7 +19,7 @@ public:
     Employee()=default; //enable the default constructor
     ~Employee()=default; //enable the default destructor
     Employee(const Employee& other)=delete;//disable copy
-    //any thing you want to enable-default disable-delete
+    //any thing you want to enable-default, disable-delete
     Employee& operator=(const Employee& other) = delete;
     Employee(Employee&& other) = delete; //move constructor
     Employee& operator=(Employee&& other) = delete;

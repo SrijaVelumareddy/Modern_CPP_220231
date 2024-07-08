@@ -1,0 +1,32 @@
+add 1 or more inputs from the user
+
+example :
+ 
+inputs : 10,12,7,9,16
+
+10+12+7+9+16 : original problem
+|
+(22)+7+9+16
+|
+(22+7)+9+16
+|
+29+9+16
+|
+(29+9)+16
+|
+38+16
+|
+54
+
+Another method:
+
+add(10,12,7,9,16)                                
+    |
+    10+add(12,7,9,16)
+            |
+            12+add(7,9,16)
+                   |
+                    7+add(9,16)
+                          |
+                          9+add(16)
+

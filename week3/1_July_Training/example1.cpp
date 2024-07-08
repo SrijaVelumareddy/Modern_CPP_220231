@@ -5,7 +5,7 @@
 
     2) System : Any computing device
 
-    3) Processor : Hardware chip (made of silicon) designed for executing instructions given by te user of the computer 
+    3) Processor : Hardware chip (made of silicon) designed for executing instructions given by the user of the computer 
 
     e.g : intel i7-1256U
 
