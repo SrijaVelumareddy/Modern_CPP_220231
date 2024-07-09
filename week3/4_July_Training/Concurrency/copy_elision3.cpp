@@ -30,7 +30,7 @@ Data Creator(){
 // }
 
 // int main(){
-//     Absorber ( Creator() ); //fn inside a function- first inner function will be called. This oline becomes..
+//     Absorber ( Creator() ); //fn inside a function- first inner function will be called. This line becomes..
 // }
 
 Data Absorber(Data d1){

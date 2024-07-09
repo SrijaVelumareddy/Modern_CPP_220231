@@ -12,7 +12,7 @@ private:
 public:
     Data()=default;
     ~Data()=default;
-    Data(const Data&)=default;
+    Data(const Data&)=delete;
     Data(Data&&)=delete;
     Data& operator=(const Data&)=delete;
     Data& operator=(Data&&)=delete;
@@ -48,7 +48,7 @@ int main(){
 int main(){
 
     Data d1{11};
-    Magic(d1); //this will not work because copy is disabled
+    // Magic(d1); //this will not work because copy is disabled
     //Magic(88); //this will not work because conversion is disabled (explicit)
     Magic(   Data {100}   ); //an rvalue of type data is used to initialize an object of type data.
                             //compiler simply refactors/modifies the code as Data d1{100}

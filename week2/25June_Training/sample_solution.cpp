@@ -17,7 +17,7 @@
 #include<functional>
 #include<vector>
 
-using Container = std::function< void (const std::string&)>;
+using Container = std::function< void (const std::string&)>;//function like predicate
 using DataContainer = std::vector<std::string>;
 
 void Adaptor(const Container fn,const DataContainer& data){

@@ -49,9 +49,9 @@ public:
     int32_t amount() const { return m_amount; }
 
     /*
-        if pointer exists, it means the object of this class is already present. As per rule sof Singleton pattern,new object cannot be created.
-        So, take the amount value given by the user. Update it in the existing object. Return this same object's pointer ti the user.
-        If pointerc is null, it means no object currently exists in the system for this class. So a new instance can be created. Take "null" provided by the user to construct a new object on the heap and return its pointer.      
+        if pointer exists, it means the object of this class is already present. As per rules of Singleton pattern,new object cannot be created.
+        So, take the amount value given by the user. Update it in the existing object. Return this same object's pointer to the user.
+        If pointer is null, it means no object currently exists in the system for this class. So a new instance can be created. Take "null" provided by the user to construct a new object on the heap and return its pointer.      
     */
     static BankAccount* GetInstance(int val){
         if(m_instance_ptr){
