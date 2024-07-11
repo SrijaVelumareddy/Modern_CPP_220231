@@ -32,4 +32,6 @@ int main(){
 
     v = A{};
 
+    //accessing incorrect index of variant will give runtime error as bad variant access
+
 }

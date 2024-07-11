@@ -1,0 +1,17 @@
+Create Bike class
+- id string
+- price float
+-InsuranceAmount() float (0.1f * price)
+ 
+Create Car class
+- id string
+- price float
+- seatcount unsigned short
+- InsuranceAmount() float (0.2f * price)
+ 
+Create Operations class
+- void CreateCarsAndObjects()
+-void FindAverageCost()
+- VrType ReturnMatchingInstance(id)
+- void DisplayInsuranceAmount()
+- unsigned short FindSeatcountForGivenId(id)

@@ -11,29 +11,25 @@ private:
     unsigned int m_seat_count {0};
 public:
 
-    float InsuranceAmount() ;
-    Car()=delete;
+    float InsuranceAmount() ; //user defined member function
+    Car()=delete;//dummy initialization
     ~Car()=default;
     Car(const Car&)=delete;
     Car(Car&&)=delete;
-    Car& operator=(const Car&)=delete;
-    Car& operator=(Car&&)=delete;
+    Car& operator=(const Car&)=delete;//copy via =
+    Car& operator=(Car&&)=delete;//move via =
 
     Car(std::string id, float price, unsigned int count) : m_id{id},m_price{price},m_seat_count{count} {}
 
     std::string id() const { return m_id; }
-    void setId(const std::string &id) { m_id = id; }
 
     float price() const { return m_price; }
-    void setPrice(float price) { m_price = price; }
 
     unsigned int seatCount() const { return m_seat_count; }
-    void setSeatCount(unsigned int seat_count) { m_seat_count = seat_count; }
 
+    //print info 
     friend std::ostream &operator<<(std::ostream &os, const Car &rhs);
-
-    
-    
+ 
 };
 
 #endif // Car_H
