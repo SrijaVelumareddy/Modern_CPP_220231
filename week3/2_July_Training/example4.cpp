@@ -5,7 +5,7 @@
 class MathOperations
 {
 private:
-    std::mutex mt{}; //mutex should not and will not copy  and does not have any parameterised construction so it cannot ba given any value and not declared in the parameterized constructor list
+    std::mutex mt{}; //mutex should not and will not copy and does not have any parameterised construction so it cannot ba given any value and not declared in the parameterized constructor list
     int32_t m_value{0};
 public:
     MathOperations(const MathOperations&)=default;

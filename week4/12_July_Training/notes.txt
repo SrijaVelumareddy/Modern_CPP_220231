@@ -1,0 +1,41 @@
+Effective use of STL
+
+1) STL containers
+
+2) STL algorithms (more commonly used)
+
+3) Theoretical understanding DS and algorithms
+
+/*                                                                  end //end is always beyond the container in all STL containers but not the last element
+    [ 101 | Rohan ] [ 102 | Akash ] [ 103 | Aman ] [ 104 | Raj ]   //////
+    0x100H          0x987H          0x435H         0x765H
+
+    ID mod 4
+
+    4 rows
+    ------
+
+    0                       [ 104 | Raj ]
+    1                       [ 101 | Rohan ]
+    2                       [ 102 | Akash ]
+    3                       [ 103 | Aman ]
+
+    Key : Attribute or the identifier for a data item
+    e.g : employee ID is key for each employee object.
+    hashing function is always applied on the key
+
+    Hashing/hash function: Mathematical operation to determine the exact row (bucket) where each key and its related object will be placed.
+
+    e.g: ID mod 4
+
+    Hash/Hash value : Output of mathematical operation(hash function) applied on key
+    e.g: 0,1,2,3 are hash values
+
+    collision: Situation where hash function applied on 2 or more keys coincidentally gives the same value
+
+    e.g: 203 mod 4 and 103 mod 4 gives answer 3 in both the cases
+
+    collision resolution technique: Actions that can be taken to resolve collision 
+        e.g: Linear probing, double hashing, open chaining etc.
+
+*/
