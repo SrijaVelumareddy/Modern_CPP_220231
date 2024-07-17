@@ -6,7 +6,7 @@
 
 using Container=std::unordered_map<unsigned int, std::string>;
 
-//iterator : eidea of going one element to other without worrying about the actual process involved
+//iterator : idea of going one element to other without worrying about the actual process involved
 
 //old cpp way
 void DisplayMapUsingIterators(const Container& data){

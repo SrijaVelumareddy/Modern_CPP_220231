@@ -41,6 +41,7 @@
 int main(){
 
     //priority is reverse of comparator operator : > mean min heap, < means max heap!
+    //time complexity is O(log(n))
 
     auto fn = [](const Employee& e1, const Employee& e2) { return e1.experienceYears() < e2.experienceYears(); };
 
