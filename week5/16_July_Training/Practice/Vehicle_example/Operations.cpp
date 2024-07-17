@@ -9,7 +9,7 @@ void CreateCarsAndBikes(DataContainer& data)
 {
     data.emplace(
         std::piecewise_construct,
-        std::forward_as_tuple("c101"),
+        std::forward_as_tuple("c101"), //if you want perfect forwarding you can use forward as tuple or else tuple is enough
         std::forward_as_tuple(std::make_shared<Car>("c101",50000.0f,5))
     );
 
@@ -61,7 +61,7 @@ void FindAverageCost(const DataContainer& data)
     }
 }
 
-std::optional<VrType> ReturnMatchingInstance(const DataContainer& data,std::string id)
+std::optional<VrType> ReturnMatchingInstance(const DataContainer& data,const std::string id)
 {
     if(data.empty()){
         //mt.lock();
@@ -81,7 +81,7 @@ std::optional<VrType> ReturnMatchingInstance(const DataContainer& data,std::stri
     return result;
 }
 
-std::optional<unsigned int> FindSeatCountForGivenId(const DataContainer& data,std::string id)
+std::optional<unsigned int> FindSeatCountForGivenId(const DataContainer& data,const std::string id)
 {
     if(data.empty()){
         // mt.lock();
@@ -124,9 +124,9 @@ void DisplayInsuranceAmount(const DataContainer& data)
 
 void MapThreads(ThreadContainer& threads,const DataContainer& data)
 {
-    threads.emplace_back(&FindAverageCost,std::ref(data));
+    threads.emplace_back(FindAverageCost,std::ref(data));
     //m_threads.emplace_back( Operations::ReturnMatchingInstance,"c105" ); //this will not execute because threads will not return anything ie.std::cout cannot be used with threads
-    threads.emplace_back(&DisplayInsuranceAmount,std::ref(data));
+    threads.emplace_back(DisplayInsuranceAmount,std::ref(data));
     //m_threads.emplace_back( Operations::FindSeatCountForGivenId, "b101" ); //this will not execute because threads will not return anything ie.std::cout cannot be used with threads
 }
 

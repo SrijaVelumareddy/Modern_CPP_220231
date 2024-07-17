@@ -29,12 +29,13 @@ using VrType=std::variant<CarPtr,BikePtr>;
 using DataContainer=std::unordered_map<std::string,VrType>;
 using ThreadContainer=std::list<std::thread>;
 
+//Note: inline variable(C++17) allows a variable to be reinitialized in a different unit file 
 
 void CreateCarsAndBikes(DataContainer& data);
 void FindAverageCost(const DataContainer& data);
-std::optional<VrType>ReturnMatchingInstance(const DataContainer& data,std::string id);
+std::optional<VrType>ReturnMatchingInstance(const DataContainer& data,const std::string id);
 void DisplayInsuranceAmount(const DataContainer& data);
-std::optional<unsigned int>FindSeatCountForGivenId(const DataContainer& data,std::string id);
+std::optional<unsigned int>FindSeatCountForGivenId(const DataContainer& data,const std::string id);
 //void Deallocate(DataContainer& data);
 void MapThreads(ThreadContainer& threads,const DataContainer& data);
 void JoinThreads(ThreadContainer& threads);

@@ -1,0 +1,104 @@
+Notes:
+1) Experience is intangible and beyond the scope of this roadmap. Higher the experience, the better!
+2) The roadmap is a guideline, implementation is upto the follower!
+3) The roadmap is industry proven, recession-resistant, honest, malpractice ignoring, cheating prohibiting
+
+
+
+15 steps [milestones, skills]!
+//////////////////////////////////////////////////////////////
+
+FOUNDATION : 3 months
+
+1) Absolute mastery in atleast 1 language, respectable knowledge in 2 more
+
+preferred combination : a system's language, an OOP language,    a scripting language
+               example:  C++/Rust,           java/kotlin/C++ ,   python or shell scripting
+
+2) Linear Data Structure
+            - arrays, lists, stacks, queues, vector
+
+3) Command-Line
+        - unix/linux command-line or powershell in windows!
+        [    
+            basic utilities,
+            some helpful tools,
+            regex,
+            find common/equivalent,
+            file permissions,
+            user permissions,
+            sudo previleges,
+            chroot and filesystems,
+            damenons and ports etc
+        ]
+Package 6-7 ctc
+//////////////////////////////////////////////////////
+
+INTERMEDIATE : Atleast 6 months
+
+4) Operating System fundamentals
+    - process life cycle, threads, scheduling, critical sections, semaphores, virtual memory, Inter-ProcessCommunication, Signals
+    - Not only theory, actually use of these concepts!
+
+5) Computer Architecture (Atleast the essential concepts)
+    - Memory, cache, buses, components interact with each other
+    - Direct connection with OS
+
+6) Computer Networks (A bit more than just basics)
+    - ip, ports, OSI layer, protocols
+    - VLANs, VPNs, subnetting
+    - Socket programming, firewalls, algorithms for networks[optional*]
+
+    *Note: optional only if you are a developer. If your job is CI/CD, virtualization, containerization, IASS, it is mandatory
+
+7) Database Management Systems:
+    - SQL and NoSQL. One each [e.g: MariaDB & MongoDB]
+    - applied knowledge, not just theoretical.
+    Do actual joins, CRUD, permissions, export, import etc
+
+///////////////////////////////////////////////////////
+
+HIGHER INTERMEDIATE : 
+
+8) virtualization Technologies
+    - Hypervisor s, creating and managing files VMs, advantages & disadvantages
+    - Hands-on creations of VMs on laptops/desktops is desired!
+
+9) Containerization
+    - What are containers, VMs v/s Container, creating container for development
+    - Docker, podman etc
+    - After learning containers, you "MAY HAVE TO" learn container orchestration tools like "Kubernetes aka K8s"
+
+10) API consumption/Testing Technologies
+    - POSTMAN!
+    - Libraries for API consumption : e.g : requests in python, curl on C, etc
+    - Learn how to integrate data from APIs into apps including
+        - Authentication, headers, status code, etc
+
+///////////////////////////////////////////////////////
+
+ADVANCED/ULTRA_PRO_MAX TOPICS :
+
+11) Non-linear Data structures
+        - trees, graphs, graph theory, implementation of tree based data structures
+        - processing data to solve problems using trees and graphs
+
+12) Advanced algorithms
+    - Graph algorithms, greedy, NP, P problems etc.
+    - These section to connect non-linear data structure
+
+13) Competetive Coding skills (way of solving problems) [THE WORST PART OF THE MILESTONE]
+    - start with easy problems
+    - Buy a pro subscription of either Codechef, LeetCode, Algoexpert.io, etc 
+    - Practice intermediate & advanced problems under pro licence
+
+Note: Competetive coding is not about remembering exact solution by memorizing them. It is about recognizing problems that are similar to the ones you have solved so you can build solutions quickly
+
+14) Proper Version Control
+    - good understanding of atleast 1 version control tool like git
+    - Work with a team so that you understand challenges of version control
+
+15) Cloud Computing
+    - pre-requisites : Computer networks, technical knowledge exposure!
+    - Either AWS, AZURE, Or GCP (in this preferential order) must be learnt
+    - Actual use of popular services (e.g route 53, EC2, DynamoDB of AWS)
