@@ -1,0 +1,37 @@
+Create a class Vehicle with the following attributes
+    - m_vehicle_type which can be PRIVATE, COMMERCIAL or RENTAL
+    - m_vehicle_standard which is either BS6, BS6_2, BS4 or OTHER.
+    - m_vehicle_fuel_type which is either ICE, ALTERNATE_FUEL or OTHER.
+    - m_vehicle_engine_type which is either NA(for ALTERNATE_FUEL category), HYBRID or REGULAR
+    - m_vehicle_multimedia_type which is either ANALOG, ANDROID_SMART, APPLE_ANDROID_SMART or APPLE_SMART
+    - m_vehicle_price which is a float value.
+    - A function CalculateRegistrationCost which return 10% of m_vehicle_price as tax for ICE or ALTERNATE_FUEL fuel_type vehicles, else 20% of m_vehicle_price
+
+
+Create the following functionalities in either a class or as global functions
+
+    - A function to create 5 objects of Vehicle class on the heap. Each object 
+    must be managed by a shared_ptr. The objects must be stored in a vector container.
+
+    - A function to return a priority queue of all smart pointers in the data container where max priority is given to Vehicle with highest m_vehicle_price
+    [Hint: Create a priority_queue]
+
+    - A function to return one vehicle of each m_vehicle_multimedia_type category 
+    from the data container. 
+    Hint: If there are 5 objects with types ANALOG, ANDROID_SMART, APPLE_SMART, ANALOG and ANDROID_SMART, return the first 3 objects only (unique category objects)
+    [Hint: Create an unordered_set]
+
+    - A function to find the count of Vehicle objects whose m_vehicle_engine_type matches the m_vehicle_engine_type value given by the user.
+    [Hint: use count_if]
+
+    - A function to return a vector of instances which satisfy the predicate passed as a parameter while calling the function
+    [Hint: Use copy_if]
+
+    - A function to check if all vehicles have price above 90000.0f or not
+    [Hint: all_of]
+
+    - A function to find the average of CalculateRegistrationCost function value
+    [Hint: Use accumulate]
+
+    - A function to return a vector container of last N items from the data container where N is passed as a parameter to the function
+    [Hint: Use copy_n]

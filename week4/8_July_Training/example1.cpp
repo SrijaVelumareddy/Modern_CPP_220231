@@ -1,7 +1,7 @@
 /*
     usecase 1: calculate square for 10 numbers
 
-    10 std::thread object to compute sq1uare of number of each
+    10 std::thread object to compute square of number of each
 
     usecase 2: 5 operations are to be performed. All are independent (order of execution is not important). Execute all 5 parallelly.
         a) one std::thread for each operation

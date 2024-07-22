@@ -1,0 +1,40 @@
+A callable object is anything which can be suffixed with () operator and invoked like a function
+
+e.g: a normal function void magic(); magic();
+
+e.g: auto fn=[](int val) { std::cout << val;}; fn();
+
+other example:
+
+member functions of the class,
+a functor object ( a class where () operator is overloaded
+                    like we saw comparator class today)
+a binded partial function created with a member function in a class
+
+
+3 major parts
+
+---------------------
+
+1) optimization of code to reduce multiple points of return in the function
+
+2) how to make a priority queue?
+    a) we need to know type of data to be fed to the queue
+    b) we need to know where data will be stored i.e backend of queue
+    c) we need to provide a "callable" item which can be used as a comparator
+    Note : you may or may not create an alias, doesn't matter
+
+3) Unordered_set requires 3 things to be specified
+    a) type of data to be stored in the hashtable i.e KEY
+    b) a "callable" object that can be used for "hashing" ( as a hash function )
+    c) a "callable" object that can be used for equality check for duplicate identifier
+
+Note: 
+    a) A lambda must be declared in header but initialized in cpp file
+    ( we can use extern keyword for this)
+            OR
+        we can inline the lambda in the header file [tricky]
+
+    b) A global function's decltype returns a function pointer, not an actual type don't use this in template parameters of Unordered_set
+
+    c) ordering/sequence matters in alias declaration
